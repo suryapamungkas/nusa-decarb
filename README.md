@@ -1,3 +1,5 @@
+<img width="1920" height="1080" alt="Screenshot 2026-09-03 155206" src="https://github.com/user-attachments/assets/1aafbd8d-3285-486e-9f43-f965afc278ee" />
+
 # NusaDecarb 🌿
 
 > **Platform Riset & Konsultasi Transisi Energi, Dekarbonisasi Industri, dan Kepatuhan Regulasi Iklim Indonesia**

@@ -1,0 +1,48 @@
+import { ClientCaseStudy } from '../types';
+
+export const clientCaseStudies: ClientCaseStudy[] = [
+  {
+    id: 'semen-nasional',
+    clientName: 'Manufaktur Semen Nasional',
+    industry: 'Sektor Semen & Bahan Bangunan',
+    title: 'Substitusi Bahan Bakar Fosil Menggunakan Refuse-Derived Fuel (RDF) & Efisiensi Termal Kiln',
+    description: 'Implementasi teknologi co-processing bahan bakar alternatif RDF perkotaan dan modernisasi preheater kiln untuk memangkas emisi langsung proses klinkerisasi semen.',
+    impactStat: '32%',
+    impactLabel: 'Penurunan intensitas karbon per ton semen',
+    tag: 'SUBSTITUSI BAHAN BAKAR (AFR)',
+    imageUrl: '/images/green_cement_rdf.jpg',
+  },
+  {
+    id: 'smelter-pomalaa',
+    clientName: 'Konsorsium Smelter Nikel Pomalaa',
+    industry: 'Sektor Pengolahan Mineral',
+    title: 'Konversi Pembangkit Mandiri ke Kontrak EBT Geotermal & Solar PV Hybrid',
+    description: 'Transisi pasokan listrik captive coal secara bertahap melalui PPA jangka panjang panas bumi dan instalasi solar farm 80 MWp untuk memenuhi standar jejak karbon baterai global.',
+    impactStat: '240 MW',
+    impactLabel: 'Kapasitas energi bersih terintegrasi',
+    tag: 'PPA GEOTERMAL & HYBRID',
+    imageUrl: '/images/smelter_solar_decarb.jpg',
+  },
+  {
+    id: 'kit-jabar',
+    clientName: 'Kawasan Industri Terpadu Jawa Barat',
+    industry: 'Infrastruktur & Properti Hijau',
+    title: 'Implementasi Smart Microgrid dan Pemasangan PLTS Rooftop Terpusat',
+    description: 'Integrasi sistem penyimpanan energi baterai (BESS) dengan PLTS atap terdistribusi pada 40 fasilitas pergudangan dan manufaktur untuk menstabilkan pasokan daya hijau.',
+    impactStat: '45.000 MWh',
+    impactLabel: 'Penghematan konsumsi listrik grid tahunan',
+    tag: 'SMART ECO-INDUSTRIAL PARK',
+    imageUrl: '/images/smart_microgrid_park.jpg',
+  },
+  {
+    id: 'logistik-rantai-dingin',
+    clientName: 'Logistik Rantai Dingin Multinasional',
+    industry: 'Transportasi & Rantai Pasok',
+    title: 'Elektrifikasi Armada Truk Berpendingin dan Pemulihan Panas Buang Fasilitas Gudang',
+    description: 'Konversi armada logistik ke truk listrik berpendingin dan pemanfaatan sistem waste heat recovery pada fasilitas cold storage untuk efisiensi pendinginan simultan.',
+    impactStat: '18.500 Ton',
+    impactLabel: 'CO2e tereliminasi selama periode audit 12 bulan',
+    tag: 'LOGISTIK EMISI NOL',
+    imageUrl: 'https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=800&q=80',
+  },
+];

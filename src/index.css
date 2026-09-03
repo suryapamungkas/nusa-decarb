@@ -1,0 +1,88 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --color-bg-primary: #050A07;
+    --color-bg-secondary: #F8FAFC;
+    --color-accent-emerald: #10B981;
+    --color-accent-mint: #34D399;
+    --color-accent-green: #22C55E;
+    --color-accent-dark: #064E3B;
+    --color-text-dark: #0F172A;
+    --color-text-light: #FFFFFF;
+  }
+
+  /* Modern Web Guidelines: Text wrap balance for headings, pretty for body copy */
+  h1, h2, h3, h4, h5, h6 {
+    text-wrap: balance;
+  }
+
+  p, blockquote, li {
+    text-wrap: pretty;
+  }
+
+  /* Smooth scrolling & proper accessible focus indicators */
+  :focus-visible {
+    outline: 2px solid #22C55E;
+    outline-offset: 3px;
+  }
+
+  /* Custom subtle scrollbar */
+  ::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #050A07;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #1E2922;
+    border-radius: 4px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: #10B981;
+  }
+}
+
+/* Accessible dialog styles from modern-web-guidance */
+dialog::backdrop {
+  background-color: rgba(5, 10, 7, 0.8);
+  backdrop-filter: blur(8px);
+}
+
+@layer utilities {
+  .text-glow-emerald {
+    text-shadow: 0 0 24px rgba(34, 197, 94, 0.65);
+  }
+
+  .text-glow-mint {
+    text-shadow: 0 0 24px rgba(52, 211, 153, 0.6);
+  }
+
+  .border-glow-emerald {
+    box-shadow: 0 0 15px rgba(34, 197, 94, 0.45);
+  }
+
+  .bg-radial-hero {
+    background: 
+      radial-gradient(circle at 75% 20%, rgba(34, 197, 94, 0.16) 0%, transparent 45%),
+      radial-gradient(circle at 20% 40%, rgba(16, 185, 129, 0.22) 0%, rgba(6, 78, 59, 0.1) 50%, rgba(5, 10, 7, 1) 90%);
+  }
+
+  .bg-grid-pattern {
+    background-size: 40px 40px;
+    background-image: 
+      linear-gradient(to right, rgba(255, 255, 255, 0.04) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(255, 255, 255, 0.04) 1px, transparent 1px);
+  }
+
+  .bg-dots-pattern {
+    background-image: radial-gradient(rgba(0, 0, 0, 0.08) 1.5px, transparent 1.5px);
+    background-size: 20px 20px;
+  }
+}
